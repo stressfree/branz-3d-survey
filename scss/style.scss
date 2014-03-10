@@ -1,0 +1,175 @@
+@import "compass/reset";
+
+@font-face {
+    font-family: 'Verb Condensed';
+    src: url('fonts/VerbCondSemibold-webfont.eot');
+    src: url('fonts/VerbCondSemibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/VerbCondSemibold-webfont.woff') format('woff'),
+         url('fonts/VerbCondSemibold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+$headingfont: 'Verb Condensed', Verdana, Arial, sans-serif;
+$bodyfont: Verdana, Arial, sans-serif;
+$textdark: #4A4A4A;
+$textlight: #fff;
+$bgcolour: #f3f4eb;
+$requiredbg: #fdffe6;
+$requiredcolour: #ff3333;
+
+body {
+	font-family: $bodyfont;
+	font-size: 62.5%;
+	background: $bgcolour;
+	color: $textdark;
+}
+
+div.header {
+	background: url("../img/header-gradient-bg.gif") repeat-x 0 0 #ED372B;
+	height: 120px;
+	
+	div.header-inner {
+		background: url("../img/branz-header-gradient-bg.jpg") no-repeat 0 0 transparent;
+		height: 120px;
+	}
+	
+	div.wrapper-outer {
+		background: url("../img/branz-header-bg.png") no-repeat 0 0 transparent;
+		height: 120px;
+	}
+	
+	div.wrapper-inner {
+		width: 984px;
+		margin: 0 auto;
+	}
+	
+	h2 {
+		font-family: $headingfont;
+		font-size: 2em;
+		padding: 75px 0 0 0;
+		margin: 0 0 0 160px;
+		color: $textlight;
+	}
+	
+	h3 {
+		float: left;
+		width: 99px;
+		
+		a {
+			display: block;
+			background: url("../img/branz-logo-home.gif") 0 0 no-repeat;
+			height: 97px;
+			overflow: hidden;
+			text-indent: -500px;
+		}
+	}
+}
+
+div.section-divider {
+	background: url("../img/sectionheader-bg.png") 0 0 repeat-x;
+	height: 5px;
+	margin: -5px 0 0 0;
+}
+
+div.content {
+	margin: 0 auto;
+	width: 980px;
+	border-top: 1px solid $textlight;
+	padding: 2em 0 3em;
+	font-size: 1.2em;
+	line-height: 1.4;
+	
+	h1 {
+		font-family: $headingfont;
+		font-size: 2em;
+		font-weight: 700;
+		margin: 0 0 0.5em 10px;
+	}
+	
+	h2 {
+		font-family: $headingfont;
+		font-size: 1.6em;
+		font-weight: 700;		
+		margin: 1.2em 0 0.5em 0;
+	}
+	
+	p, div.ss-section-description {
+		margin: 0.4em 250px 1.2em 0;
+	}
+	
+	img {
+		margin: 0.3em 0 0.8em 0;
+		border: 1px solid $textdark;
+	}
+	
+	textarea {
+		width: 600px;
+		height: 80px;
+		font-family: $bodyfont;
+		border: 1px solid $textdark;
+		font-size: 1.2em;
+		line-height: 1.5;
+	}
+}
+
+div.ss-item {
+	padding: 0.6em 10px 0.6em 10px;
+}
+	
+div.ss-form-desc {
+	padding: 0 0 0 10px;
+}
+
+div.required-message, div.ss-required-asterisk, div.ss-password-warning, div.ss-footer {
+	display: none;
+}
+
+div.required-message {
+	margin: 1em 0 0.6em 1.5em;
+	font-weight: 700;
+}
+
+div.ss-not-supplied {
+	background: $requiredbg;
+	border: 1px solid $requiredcolour;
+	
+	div.required-message {
+		display: block;
+	}
+}
+
+div.ss-q-title {
+	font-family: $headingfont;
+	font-weight: 700;
+	font-size: 1.2em;
+	margin: 0.2em 0 0.5em 0;
+}
+
+li.ss-choice-item {
+	margin: 0 0 0.3em 1.5em;
+}
+
+input.ss-q-radio {
+	border: 0px none;
+}
+
+div.ss-navigate {
+	margin: 1.6em 0 0 0;
+	
+	input {
+		color: $textlight;
+		font-size: 1.6em;
+		background: #ED372B;
+		border: 1px solid $textdark;
+		padding: 0.4em 1em 0.3em 1em;
+	}
+}
+
+div.ss-embeddable-object-container {
+	padding: 0;
+	
+	h2 {
+		display: none;
+	}
+}
